@@ -8,9 +8,9 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 public class GoogleSearchPageTest extends BaseTest {
     @Test
     public void googleSearchByNameTest() {
-        driver.navigate().to("http://www.google.com");
+        driver.get("http://www.google.com");
         driver.findElement(By.name("q")).sendKeys("webdriver");
         driver.findElement(By.name("btnG")).click();
-        wait.until(titleIs("webdriver - Google Search"));
+        wait.until(titleIs("webdriver - Поиск в Google"));
     }
 }
