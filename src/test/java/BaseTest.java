@@ -17,7 +17,7 @@ import java.io.File;
 
 public class BaseTest {
 
-}
+
         public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
         public WebDriver driver;
         public WebDriverWait wait;
