@@ -1,4 +1,6 @@
 import org.junit.Test;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.List;
@@ -28,14 +30,16 @@ public class LeftSidebarMenuTest extends BaseTest{
                 for (int j = 0;j < subMenuItemsList.size();){
 
                     subMenuItemsList.get(j).click();
+                    Assert.assertTrue(areElementsPresent(driver, By.xpath("//td[@id='content']//h1")));
                     subMenuItemsList = driver.findElements(By.xpath("//*[@id='app-'][" + i + "]//li"));
                     j++;
                 }
             }
+            Assert.assertTrue(areElementsPresent(driver, By.xpath("//td[@id='content']//h1")));
             i++;
-
-
         }
 
     }
+
 }
+
