@@ -1,3 +1,5 @@
+import Pages.AdminPage;
+import Pages.LoginPage;
 import org.junit.Test;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -14,24 +16,23 @@ public class LeftSidebarMenuTest extends BaseTest{
     @Test
     public void goThroughAllLinksInLeftSidebarVerifyHeaderTest(){
         driver.get("http://localhost/litecart/admin/");
-        driver.findElement(By.name("username")).sendKeys("admin");
-        driver.findElement(By.name("password")).sendKeys("admin");
-        driver.findElement(By.name("login")).click();
+        int menuItemSize;
+        int subMenuItemsListSize;
 
-        List<WebElement> menuItemsList = new ArrayList<WebElement>();
+        LoginPage loginpage = new LoginPage(driver);
+        AdminPage adminpage = loginpage.loginAs("admin","admin");
+
         List<WebElement> subMenuItemsList = new ArrayList<WebElement>();
-        menuItemsList = driver.findElements(By.xpath("//*[@id='app-']"));
-        int menuItemSize = menuItemsList.size();
+        menuItemSize = adminpage.getAllMenuItemsFromLeftSidebarSize();
         for(int i = 1; i < menuItemSize;){
 
-            driver.findElement(By.xpath("//*[@id='app-'][" + i + "]")).click();
-            subMenuItemsList = driver.findElements(By.xpath("//*[@id='app-'][" + i + "]//li"));
-            if (subMenuItemsList.size() > 1) {
-                for (int j = 0;j < subMenuItemsList.size();){
-
+            adminpage.clickSpecificMenuItemFromLeftSidebarByPositionNumber(i);
+            subMenuItemsListSize = adminpage.getAllSubMenuItemsFromLeftSidebarSizeByParentPositionNumber(i);
+            if (subMenuItemsListSize > 1) {
+                for (int j = 0;j < subMenuItemsListSize;){
+                    subMenuItemsList = adminpage.getAllSubMenuItemsFromLeftSidebarMenuItemByParentPositionNumber(i);
                     subMenuItemsList.get(j).click();
                     Assert.assertTrue(areElementsPresent(driver, By.xpath("//td[@id='content']//h1")));
-                    subMenuItemsList = driver.findElements(By.xpath("//*[@id='app-'][" + i + "]//li"));
                     j++;
                 }
             }
