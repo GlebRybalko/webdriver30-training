@@ -17,6 +17,7 @@ public class LoginPage {
     public LoginPage(WebDriver driver) {
         this.driver = driver;
 
+
 /*        if (!"My Store".equals(driver.getTitle())) {
             throw new IllegalStateException("This is not the login page");
         }*/
@@ -43,6 +44,7 @@ public class LoginPage {
     }
 
     public AdminPage loginAs(String username, String password) {
+
         typeUsername(username);
         typePassword(password);
         return submitLogin();

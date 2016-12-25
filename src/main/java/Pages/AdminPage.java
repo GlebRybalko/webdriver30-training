@@ -34,6 +34,10 @@ public class AdminPage {
         driver.findElement(By.xpath("//*[@id='app-'][" + i + "]")).click();
     }
 
+    public void clickSpecificMenuItemFromLeftSidebarByName(String name){
+        driver.findElement(By.xpath("//*[@id='app-']//span[@class='name'][text()='"+name+"']")).click();
+    }
+
     public List<WebElement> getAllSubMenuItemsFromLeftSidebarMenuItemByParentPositionNumber(int i){
         return driver.findElements(By.xpath("//*[@id='app-']" + "[" + i + "]//li"));
     }

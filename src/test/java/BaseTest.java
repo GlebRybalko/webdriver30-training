@@ -15,6 +15,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -24,7 +27,7 @@ public class BaseTest {
         public WebDriver driver;
         public WebDriverWait wait;
 
-        boolean areElementsPresent(WebDriver driver, By locator) {
+        public boolean areElementsPresent(WebDriver driver, By locator) {
             return driver.findElements(locator).size() > 0;
         }
         @Before
@@ -43,7 +46,11 @@ public class BaseTest {
                 Runtime.getRuntime().addShutdownHook(
                         new Thread(() -> { driver.quit(); driver = null; }));
         }
-
+        public Boolean isListSortedInAlphabeticalOrder(List<String> list){
+            List<String> tmp = new ArrayList(list);
+            Collections.sort(tmp);
+            return tmp.equals(list);
+        }
  //       @After
  //       public void stop() {
  //           driver.quit();
