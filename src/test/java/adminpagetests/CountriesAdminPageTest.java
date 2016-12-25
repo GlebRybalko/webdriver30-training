@@ -1,5 +1,8 @@
+package adminpagetests;
+
 import Pages.AdminPage;
 import Pages.LoginPage;
+import base.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -11,7 +14,7 @@ import java.util.List;
 /**
  * Created by Gleb on 23.12.2016.
  */
-public class CountriesAdminPageTest extends BaseTest{
+public class CountriesAdminPageTest extends BaseTest {
 
     @Test
     public void countriesSortTest() {

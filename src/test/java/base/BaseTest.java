@@ -1,4 +1,4 @@
-/**
+package base; /**
  * Created by glib.rybalko on 12/14/2016.
  */
 import org.junit.After;

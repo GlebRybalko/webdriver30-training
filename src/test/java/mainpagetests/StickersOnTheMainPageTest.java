@@ -1,3 +1,6 @@
+package mainpagetests;
+
+import base.BaseTest;
 import org.junit.Test;
 import org.junit.Assert;
 import org.openqa.selenium.By;

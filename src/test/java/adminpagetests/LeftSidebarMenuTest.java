@@ -1,8 +1,10 @@
+package adminpagetests;
+
 import Pages.AdminPage;
 import Pages.LoginPage;
+import base.BaseTest;
 import org.junit.Test;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.List;
@@ -11,7 +13,7 @@ import java.util.ArrayList;
 /**
  * Created by Gleb on 20.12.2016.
  */
-public class LeftSidebarMenuTest extends BaseTest{
+public class LeftSidebarMenuTest extends BaseTest {
 
     @Test
     public void goThroughAllLinksInLeftSidebarVerifyHeaderTest(){

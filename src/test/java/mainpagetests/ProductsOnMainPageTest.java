@@ -1,3 +1,6 @@
+package mainpagetests;
+
+import base.BaseTest;
 import org.hamcrest.core.IsEqual;
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,7 +11,7 @@ import org.openqa.selenium.WebElement;
 /**
  * Created by Gleb on 25.12.2016.
  */
-public class ProductsOnMainPageTest extends BaseTest{
+public class ProductsOnMainPageTest extends BaseTest {
     @Test
     public void ProductDetailsScreenTest(){
         driver.get("http://localhost/litecart/");

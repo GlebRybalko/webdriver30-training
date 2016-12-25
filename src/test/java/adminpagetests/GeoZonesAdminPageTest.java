@@ -1,5 +1,8 @@
+package adminpagetests;
+
 import Pages.AdminPage;
 import Pages.LoginPage;
+import base.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -11,7 +14,7 @@ import java.util.List;
 /**
  * Created by Gleb on 25.12.2016.
  */
-public class GeoZonesAdminPageTest extends BaseTest{
+public class GeoZonesAdminPageTest extends BaseTest {
     @Test
     public void geoZonePageSortTest(){
         driver.get("http://localhost/litecart/admin/");
