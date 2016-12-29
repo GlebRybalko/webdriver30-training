@@ -1,4 +1,4 @@
-package createaccountpage;
+package createaccountpagetests;
 
 import Pages.CreateAccountPage;
 import Pages.MainPage;
