@@ -1,7 +1,7 @@
 package adminpagetests;
 
 import Pages.AdminPage;
-import Pages.LoginPage;
+import Pages.AdminLoginPage;
 import base.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
@@ -18,7 +18,7 @@ public class GeoZonesAdminPageTest extends BaseTest {
     @Test
     public void geoZonePageSortTest(){
         driver.get("http://localhost/litecart/admin/");
-        LoginPage loginpage = new LoginPage(driver);
+        AdminLoginPage loginpage = new AdminLoginPage(driver);
         AdminPage adminpage = loginpage.loginAs("admin","admin");
 
         List<WebElement> geoZonesList = new ArrayList<>();

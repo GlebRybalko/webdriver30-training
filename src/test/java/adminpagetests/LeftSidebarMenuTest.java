@@ -1,7 +1,7 @@
 package adminpagetests;
 
 import Pages.AdminPage;
-import Pages.LoginPage;
+import Pages.AdminLoginPage;
 import base.BaseTest;
 import org.junit.Test;
 import org.junit.Assert;
@@ -21,7 +21,7 @@ public class LeftSidebarMenuTest extends BaseTest {
         int menuItemSize;
         int subMenuItemsListSize;
 
-        LoginPage loginpage = new LoginPage(driver);
+        AdminLoginPage loginpage = new AdminLoginPage(driver);
         AdminPage adminpage = loginpage.loginAs("admin","admin");
 
         List<WebElement> subMenuItemsList = new ArrayList<WebElement>();
