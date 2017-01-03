@@ -1,51 +1,45 @@
 package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 
 /**
  * Created by Gleb on 21.12.2016.
  */
 public class AdminLoginPage {
-    By usernameLocator = By.name("username");
-    By passwordLocator = By.name("password");
-    By loginButtonLocator = By.name("login");
+    private WebDriver driver;
 
-    private final WebDriver driver;
+    @FindBy(name = "username")
+    private WebElement usernameLocator;
 
-    public AdminLoginPage(WebDriver driver) {
-        this.driver = driver;
+    @FindBy(name = "password")
+    private WebElement passwordLocator;
 
+    @FindBy(name = "login")
+    private WebElement loginButtonLocator;
 
-/*        if (!"My Store".equals(driver.getTitle())) {
-            throw new IllegalStateException("This is not the login page");
-        }*/
+    public void typeUsername(String username) {
+        usernameLocator.sendKeys(username);
     }
 
-    public AdminLoginPage typeUsername(String username) {
-        driver.findElement(usernameLocator).sendKeys(username);
-        return this;
+    public void typePassword(String password) {
+        passwordLocator.sendKeys(password);
     }
 
-    public AdminLoginPage typePassword(String password) {
-        driver.findElement(passwordLocator).sendKeys(password);
-        return this;
+    public void submitLogin() {
+        loginButtonLocator.click();
     }
 
-    public AdminPage submitLogin() {
-        driver.findElement(loginButtonLocator).click();
-        return new AdminPage(driver);
+    public void submitLoginExpectingFailure() {
+        loginButtonLocator.click();
     }
 
-    public AdminLoginPage submitLoginExpectingFailure() {
-        driver.findElement(loginButtonLocator).click();
-        return new AdminLoginPage(driver);
-    }
-
-    public AdminPage loginAs(String username, String password) {
+    public void loginAs(String username, String password) {
 
         typeUsername(username);
         typePassword(password);
-        return submitLogin();
+        submitLogin();
     }
 }

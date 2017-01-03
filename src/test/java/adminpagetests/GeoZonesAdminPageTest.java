@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,12 +19,13 @@ public class GeoZonesAdminPageTest extends BaseTest {
     @Test
     public void geoZonePageSortTest(){
         driver.get("http://localhost/litecart/admin/");
-        AdminLoginPage loginpage = new AdminLoginPage(driver);
-        AdminPage adminpage = loginpage.loginAs("admin","admin");
+        AdminLoginPage loginpage = PageFactory.initElements(driver, AdminLoginPage.class);
+        AdminPage adminpage = PageFactory.initElements(driver, AdminPage.class);
+        loginpage.loginAs("admin","admin");
 
         List<WebElement> geoZonesList = new ArrayList<>();
 
-        adminpage.clickSpecificMenuItemFromLeftSidebarByName("Geo Zones");
+        adminpage.clickSpecificMenuItemFromLeftSidebarByPositionNumber(5); //id 5 =>"Geo Zones"
 
         geoZonesList = driver.findElements(By.cssSelector("form[name = 'geo_zones_form'] td:nth-child(3) > a"));
 

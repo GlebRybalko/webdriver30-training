@@ -7,6 +7,8 @@ import org.junit.Test;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -21,8 +23,9 @@ public class LeftSidebarMenuTest extends BaseTest {
         int menuItemSize;
         int subMenuItemsListSize;
 
-        AdminLoginPage loginpage = new AdminLoginPage(driver);
-        AdminPage adminpage = loginpage.loginAs("admin","admin");
+        AdminLoginPage loginpage = PageFactory.initElements(driver, AdminLoginPage.class);
+        AdminPage adminpage = PageFactory.initElements(driver, AdminPage.class);
+        loginpage.loginAs("admin","admin");
 
         List<WebElement> subMenuItemsList = new ArrayList<WebElement>();
         menuItemSize = adminpage.getAllMenuItemsFromLeftSidebarSize();

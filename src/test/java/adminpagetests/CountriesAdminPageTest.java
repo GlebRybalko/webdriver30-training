@@ -2,11 +2,13 @@ package adminpagetests;
 
 import Pages.AdminPage;
 import Pages.AdminLoginPage;
+import Pages.UserAccountPage;
 import base.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +22,9 @@ public class CountriesAdminPageTest extends BaseTest {
     public void countriesSortTest() {
 
         driver.get("http://localhost/litecart/admin/");
-        AdminLoginPage loginpage = new AdminLoginPage(driver);
-        AdminPage adminpage = loginpage.loginAs("admin","admin");
+        AdminLoginPage loginpage = PageFactory.initElements(driver, AdminLoginPage.class);
+        AdminPage adminpage = PageFactory.initElements(driver, AdminPage.class);
+        loginpage.loginAs("admin","admin");
 
         List<WebElement> countriesNamesList = new ArrayList<>();
         List <String> countryNames = new ArrayList<>();
@@ -31,7 +34,7 @@ public class CountriesAdminPageTest extends BaseTest {
         WebElement countryZoneCounter;
         Integer countriesListSize = 0;
 
-        adminpage.clickSpecificMenuItemFromLeftSidebarByName("Countries");
+        adminpage.clickSpecificMenuItemFromLeftSidebarByPositionNumber(2); //id 2 => Countries
         countriesNamesList = driver.findElements(By.cssSelector("form[name=countries_form] tr.row td:nth-child(5)"));
         countriesListSize = countriesNamesList.size();
 

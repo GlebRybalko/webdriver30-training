@@ -1,8 +1,10 @@
 package Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
@@ -10,40 +12,56 @@ import java.util.List;
  * Created by Gleb on 21.12.2016.
  */
 public class AdminPage {
-    By menuItemsListLocator = By.xpath("//*[@id='app-']");
 
-    private final WebDriver driver;
+    private WebDriver driver;
 
-    public AdminPage(WebDriver driver) {
-        this.driver = driver;
+    @FindBy(xpath ="//*[@id='app-']")
+    private List<WebElement> menuItemsListLocator;
+
+    @FindBy(xpath = "//a[@class = 'button'][text() = ' Add New Product']")
+    private WebElement AddNewProductButton;
+
+    public void addNewProductButtonClick(){
+        AddNewProductButton.click();
     }
 
     public List<WebElement> getAllMenuItemsFromLeftSidebar(){
-        return driver.findElements(menuItemsListLocator);
+        return menuItemsListLocator;
     }
 
     public WebElement getSpecificMenuItemFromLeftSidebarByPositionNumber(int i){
-        return driver.findElement(By.xpath("//*[@id='app-'][" + i + "]"));
+        return menuItemsListLocator.get(i);
     }
 
     public int getAllMenuItemsFromLeftSidebarSize(){
+
         return getAllMenuItemsFromLeftSidebar().size();
     }
 
     public void clickSpecificMenuItemFromLeftSidebarByPositionNumber(int i){
-        driver.findElement(By.xpath("//*[@id='app-'][" + i + "]")).click();
+         menuItemsListLocator.get(i).click();
     }
 
+/*
     public void clickSpecificMenuItemFromLeftSidebarByName(String name){
-        driver.findElement(By.xpath("//*[@id='app-']//span[@class='name'][text()='"+name+"']")).click();
+        driver.findElement(By.xpath("/*/
+/*[@id='app-']//span[@class='name'][text()='"+name+"']")).click();
+        for(WebElement el : menuItemsListLocator){
+            System.out.println(el.findElement(By.xpath("//span[@class='name'][text()='"+name+"']")).getText());
+            if (el.findElement(By.xpath(".//span[@class='name'][text()='"+name+"']")).getText() == name){
+                System.out.println(el.findElement(By.xpath(".//span[@class='name'][text()='"+name+"']")).getText() + " clicked");
+                el.click();
+            }
+        }
     }
+*/
 
     public List<WebElement> getAllSubMenuItemsFromLeftSidebarMenuItemByParentPositionNumber(int i){
-        return driver.findElements(By.xpath("//*[@id='app-']" + "[" + i + "]//li"));
+        return menuItemsListLocator.get(i).findElements(By.xpath("//li"));
     }
 
     public WebElement getSpecificSubMenuItemFromLeftSidebarByPositionNumber(int i){
-        return driver.findElement(By.xpath("//*[@id='app-'][" + i + "]"));
+        return menuItemsListLocator.get(i);
     }
 
     public int getAllSubMenuItemsFromLeftSidebarSizeByParentPositionNumber(int i){
@@ -51,6 +69,27 @@ public class AdminPage {
     }
 
     public void clickSpecificSubMenuItemFromLeftSidebarByPositionNumber(int i){
-        driver.findElement(By.xpath("//*[@id='app-'][" + i + "]")).click();
+        menuItemsListLocator.get(i).click();
+    }
+
+    public void clickSpecificSubMenuItemFromLeftSidebarByName(String name){
+        driver.findElement(By.xpath("//*[@id='app-']//span[@class='name'][text()='"+name+"'][1]")).click();
+    }
+
+    public void unhide(WebDriver driver, WebElement element) {
+        String script = "arguments[0].style.opacity=1;"
+                + "arguments[0].style['transform']='translate(0px, 0px) scale(1)';"
+                + "arguments[0].style['MozTransform']='translate(0px, 0px) scale(1)';"
+                + "arguments[0].style['WebkitTransform']='translate(0px, 0px) scale(1)';"
+                + "arguments[0].style['msTransform']='translate(0px, 0px) scale(1)';"
+                + "arguments[0].style['OTransform']='translate(0px, 0px) scale(1)';"
+                + "return true;";
+        ((JavascriptExecutor) driver).executeScript(script, element);
+    }
+
+    public void attachFile(WebDriver driver, WebElement element, String file) {
+        WebElement input = element;
+        unhide(driver, input);
+        input.sendKeys(file);
     }
 }

@@ -29,17 +29,6 @@ public class BaseTest {
             return driver.findElements(locator).size() > 0;
         }
 
-        public void unhide(WebDriver driver, WebElement element) {
-            String script = "arguments[0].style.opacity=1;"
-                    + "arguments[0].style['transform']='translate(0px, 0px) scale(1)';"
-                    + "arguments[0].style['MozTransform']='translate(0px, 0px) scale(1)';"
-                    + "arguments[0].style['WebkitTransform']='translate(0px, 0px) scale(1)';"
-                    + "arguments[0].style['msTransform']='translate(0px, 0px) scale(1)';"
-                    + "arguments[0].style['OTransform']='translate(0px, 0px) scale(1)';"
-                    + "return true;";
-            ((JavascriptExecutor) driver).executeScript(script, element);
-        }
-
         @Before
         public void start() {
                 if (tlDriver.get() != null) {
@@ -54,7 +43,7 @@ public class BaseTest {
                 wait = new WebDriverWait(driver, 10);
 
                 Runtime.getRuntime().addShutdownHook(
-                        new Thread(() -> { driver.quit(); driver = null; }));
+                        new Thread(() -> {driver.quit(); driver = null; }));
         }
         public Boolean isListSortedInAlphabeticalOrder(List<String> list){
             List<String> tmp = new ArrayList(list);
