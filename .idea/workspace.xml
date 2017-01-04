@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a517168-c75b-4ef9-93e4-8a2814e130a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Pages/AdminAddProductPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/adminpagetests/AddProductTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Pages/AdminCatalogPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Pages/AdminLoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/Pages/AdminLoginPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Pages/AdminAddProductPage.java" afterPath="$PROJECT_DIR$/src/main/java/Pages/AdminAddProductPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Pages/AdminPage.java" afterPath="$PROJECT_DIR$/src/main/java/Pages/AdminPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/adminpagetests/AddProductTest.java" afterPath="$PROJECT_DIR$/src/test/java/adminpagetests/AddProductTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/adminpagetests/CountriesAdminPageTest.java" afterPath="$PROJECT_DIR$/src/test/java/adminpagetests/CountriesAdminPageTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/adminpagetests/GeoZonesAdminPageTest.java" afterPath="$PROJECT_DIR$/src/test/java/adminpagetests/GeoZonesAdminPageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/adminpagetests/LeftSidebarMenuTest.java" afterPath="$PROJECT_DIR$/src/test/java/adminpagetests/LeftSidebarMenuTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="AdminPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Pages/AdminPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="86" column="69" lean-forward="true" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="69" />
+            <state relative-caret-position="231">
+              <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,45 +49,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminAddProductPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminAddProductPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Pages/AdminAddProductPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="1002">
+              <caret line="115" column="53" lean-forward="true" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1789#1790#0" expanded="true" />
-                <element signature="e#1837#1838#0" expanded="true" />
-                <element signature="e#1882#1883#0" expanded="true" />
-                <element signature="e#1930#1931#0" expanded="true" />
-                <element signature="e#8237#8238#0" expanded="true" />
-                <element signature="e#8271#8272#0" expanded="true" />
-                <element signature="e#8313#8314#0" expanded="true" />
-                <element signature="e#8351#8352#0" expanded="true" />
-                <element signature="e#8386#8387#0" expanded="true" />
-                <element signature="e#8417#8418#0" expanded="true" />
-                <element signature="e#8454#8455#0" expanded="true" />
-                <element signature="e#8487#8488#0" expanded="true" />
-                <element signature="e#8525#8526#0" expanded="true" />
-                <element signature="e#8559#8560#0" expanded="true" />
-                <element signature="e#8602#8603#0" expanded="true" />
-                <element signature="e#8636#8637#0" expanded="true" />
-                <element signature="e#8674#8675#0" expanded="true" />
-                <element signature="e#8708#8709#0" expanded="true" />
-                <element signature="e#8748#8749#0" expanded="true" />
-                <element signature="e#8784#8785#0" expanded="true" />
-                <element signature="e#8824#8825#0" expanded="true" />
-                <element signature="e#8860#8861#0" expanded="true" />
+                <element signature="e#3189#3190#0" expanded="true" />
+                <element signature="e#3242#3243#0" expanded="true" />
+                <element signature="e#3284#3285#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddProductTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddProductTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/AddProductTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="682">
+              <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeoZonesAdminPageTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/GeoZonesAdminPageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="27" column="74" lean-forward="false" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminCatalogPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/AdminCatalogPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,8 +101,8 @@
       <file leaf-file-name="groovy_console_3.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_3.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="242">
+              <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -187,13 +188,14 @@
         <option value="$PROJECT_DIR$/src/test/java/loginpagetests/LoginAdminPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/adminpagetests/LeftSidebarMenuTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/AdminLoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/adminpagetests/CountriesAdminPageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/adminpagetests/GeoZonesAdminPageTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Pages/AdminPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/BaseTest.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_3.groovy" />
-        <option value="$PROJECT_DIR$/src/test/java/adminpagetests/AddProductTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/AdminAddProductPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Pages/AdminCatalogPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Pages/AdminPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/adminpagetests/GeoZonesAdminPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/adminpagetests/CountriesAdminPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/adminpagetests/AddProductTest.java" />
       </list>
     </option>
   </component>
@@ -218,9 +220,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -399,6 +400,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,59 +420,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddProductTest.addNewProductTest">
-    <configuration default="false" name="CreateUsersTest.createValidUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="createaccountpagetests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="WebDriverTestFramework" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="createaccountpagetests" />
-      <option name="MAIN_CLASS_NAME" value="createaccountpagetests.CreateUsersTest" />
-      <option name="METHOD_NAME" value="createValidUserTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CreateUsersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="createaccountpagetests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="WebDriverTestFramework" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="createaccountpagetests" />
-      <option name="MAIN_CLASS_NAME" value="createaccountpagetests.CreateUsersTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.GeoZonesAdminPageTest">
     <configuration default="false" name="AddProductTest.addNewProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -535,6 +485,58 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="adminpagetests" />
       <option name="MAIN_CLASS_NAME" value="adminpagetests.AddProductTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CountriesAdminPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="adminpagetests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="WebDriverTestFramework" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="adminpagetests" />
+      <option name="MAIN_CLASS_NAME" value="adminpagetests.CountriesAdminPageTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="GeoZonesAdminPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="adminpagetests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="WebDriverTestFramework" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="adminpagetests" />
+      <option name="MAIN_CLASS_NAME" value="adminpagetests.GeoZonesAdminPageTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -763,19 +765,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CreateUsersTest.createValidUserTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CreateUsersTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AddProductTest.addNewProductTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LoginAdminPageTest.logWithValidCredentials" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AddProductTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AddProductTest.addNewProductTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LoginAdminPageTest.logWithValidCredentials" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AddProductTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CountriesAdminPageTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GeoZonesAdminPageTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AddProductTest.addNewProductTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AddProductTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LoginAdminPageTest.logWithValidCredentials" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CreateUsersTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CreateUsersTest.createValidUserTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GeoZonesAdminPageTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CountriesAdminPageTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AddProductTest.addNewProductTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AddProductTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LoginAdminPageTest.logWithValidCredentials" />
       </list>
     </recent_temporary>
   </component>
@@ -898,39 +900,46 @@
       <option name="project" value="LOCAL" />
       <updated>1483052132466</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Interim results of assignment #12">
+      <created>1483483575691</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1483483575691</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddProductTest_addNewProductTest - 2017.01.03 at 23h 52m 50s.xml">
+    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 22h 00m 30s.xml">
       <configuration name="AddProductTest.addNewProductTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddProductTest_addNewProductTest - 2017.01.03 at 23h 55m 28s.xml">
+    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 22h 05m 25s.xml">
       <configuration name="AddProductTest.addNewProductTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 00h 01m 01s.xml">
+    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 22h 06m 51s.xml">
       <configuration name="AddProductTest.addNewProductTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 00h 14m 33s.xml">
+    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 22h 08m 52s.xml">
       <configuration name="AddProductTest.addNewProductTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 00h 14m 38s.xml">
+    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 22h 12m 22s.xml">
       <configuration name="AddProductTest.addNewProductTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 00h 16m 32s.xml">
+    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 22h 12m 51s.xml">
       <configuration name="AddProductTest.addNewProductTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 00h 18m 51s.xml">
+    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 22h 13m 59s.xml">
       <configuration name="AddProductTest.addNewProductTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 00h 23m 00s.xml">
+    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 22h 14m 48s.xml">
       <configuration name="AddProductTest.addNewProductTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 00h 37m 20s.xml">
-      <configuration name="AddProductTest.addNewProductTest" configurationId="JUnit" />
+    <history-entry file="CountriesAdminPageTest - 2017.01.04 at 22h 17m 46s.xml">
+      <configuration name="CountriesAdminPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddProductTest_addNewProductTest - 2017.01.04 at 00h 37m 23s.xml">
-      <configuration name="AddProductTest.addNewProductTest" configurationId="JUnit" />
+    <history-entry file="GeoZonesAdminPageTest - 2017.01.04 at 22h 19m 06s.xml">
+      <configuration name="GeoZonesAdminPageTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -947,24 +956,24 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45664105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45664105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28489584" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34906697" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34906697" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -987,25 +996,12 @@
     <MESSAGE value="Restructure tests to make them live in appropriate packages" />
     <MESSAGE value="New page objects added(CreateAccountPage, MainPage, UserAccountPage)&#10;Added scenario to create new user account" />
     <MESSAGE value="package createaccountpage renamed to createaccountpagetests" />
-    <option name="LAST_COMMIT_MESSAGE" value="package createaccountpage renamed to createaccountpagetests" />
+    <MESSAGE value="Interim results of assignment #12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interim results of assignment #12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/adminpagetests/AddProductTest.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/adminpagetests/AddProductTest.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="82" />
+      <option name="time" value="90" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1014,16 +1010,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/loginpagetests/LoginAdminPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GoogleSearchPageTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1164,13 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="226" column="43" lean-forward="false" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.0.1/selenium-api-3.0.1.jar!/org/openqa/selenium/By.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -1182,13 +1161,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1283,24 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/CountriesAdminPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="36" column="94" lean-forward="false" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/GeoZonesAdminPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="95" lean-forward="false" selection-start-line="27" selection-start-column="95" selection-end-line="27" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Pages/AdminLoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -1330,11 +1284,18 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_3.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="242">
+          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.0.1/selenium-remote-driver-3.0.1.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1346,28 +1307,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.0.1/selenium-remote-driver-3.0.1.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
-          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/AddProductTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/AdminCatalogPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/AdminPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="86" column="69" lean-forward="true" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="69" />
+        <state relative-caret-position="176">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1384,34 +1335,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/AdminAddProductPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="308">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/AdminPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1789#1790#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1882#1883#0" expanded="true" />
-            <element signature="e#1930#1931#0" expanded="true" />
-            <element signature="e#8237#8238#0" expanded="true" />
-            <element signature="e#8271#8272#0" expanded="true" />
-            <element signature="e#8313#8314#0" expanded="true" />
-            <element signature="e#8351#8352#0" expanded="true" />
-            <element signature="e#8386#8387#0" expanded="true" />
-            <element signature="e#8417#8418#0" expanded="true" />
-            <element signature="e#8454#8455#0" expanded="true" />
-            <element signature="e#8487#8488#0" expanded="true" />
-            <element signature="e#8525#8526#0" expanded="true" />
-            <element signature="e#8559#8560#0" expanded="true" />
-            <element signature="e#8602#8603#0" expanded="true" />
-            <element signature="e#8636#8637#0" expanded="true" />
-            <element signature="e#8674#8675#0" expanded="true" />
-            <element signature="e#8708#8709#0" expanded="true" />
-            <element signature="e#8748#8749#0" expanded="true" />
-            <element signature="e#8784#8785#0" expanded="true" />
-            <element signature="e#8824#8825#0" expanded="true" />
-            <element signature="e#8860#8861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/GeoZonesAdminPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="27" column="74" lean-forward="false" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/AdminAddProductPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1002">
+          <caret line="115" column="53" lean-forward="true" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3189#3190#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3284#3285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/CountriesAdminPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="36" column="74" lean-forward="false" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/AddProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

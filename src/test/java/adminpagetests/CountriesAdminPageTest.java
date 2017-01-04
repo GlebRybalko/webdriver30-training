@@ -34,7 +34,7 @@ public class CountriesAdminPageTest extends BaseTest {
         WebElement countryZoneCounter;
         Integer countriesListSize = 0;
 
-        adminpage.clickSpecificMenuItemFromLeftSidebarByPositionNumber(2); //id 2 => Countries
+        adminpage.clickSpecificMenuItemFromLeftSidebarByName("Countries");
         countriesNamesList = driver.findElements(By.cssSelector("form[name=countries_form] tr.row td:nth-child(5)"));
         countriesListSize = countriesNamesList.size();
 

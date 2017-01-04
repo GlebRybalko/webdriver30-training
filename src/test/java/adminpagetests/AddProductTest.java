@@ -1,10 +1,12 @@
 package adminpagetests;
 
 import Pages.AdminAddProductPage;
+import Pages.AdminCatalogPage;
 import Pages.AdminLoginPage;
 import Pages.AdminPage;
 import base.BaseTest;
 import org.junit.Test;
+import org.junit.Assert;
 import org.openqa.selenium.support.PageFactory;
 
 /**
@@ -14,25 +16,28 @@ public class AddProductTest extends BaseTest {
 
     @Test
     public void addNewProductTest(){
+
+        String productname = "ProductTest 7";
+
         driver.get("http://localhost/litecart/admin/");
 
         AdminLoginPage adminLoginPage = PageFactory.initElements(driver,AdminLoginPage.class);
         AdminPage adminPage = PageFactory.initElements(driver,AdminPage.class);
         AdminAddProductPage addProductPage = PageFactory.initElements(driver, AdminAddProductPage.class);
+        AdminCatalogPage catalogPage = PageFactory.initElements(driver, AdminCatalogPage.class);
 
         adminLoginPage.loginAs("admin","admin");
-        adminPage.clickSpecificMenuItemFromLeftSidebarByPositionNumber(1); //id 1 => Catalog
-        //adminPage.clickSpecificMenuItemFromLeftSidebarByName("Catalog");
+        adminPage.clickSpecificMenuItemFromLeftSidebarByName("Catalog");
         adminPage.addNewProductButtonClick();
 
         addProductPage.clickOnGeneralTab();
         addProductPage.setProductStatusEnabled();
-        addProductPage.setProductName("ProductTest 2");
-        addProductPage.setProductCode("ProductCode");
+        addProductPage.setProductName(productname);
+        addProductPage.setProductCode("ProductCode 7");
         addProductPage.setProductCategoryByName("Rubber Ducks");
         addProductPage.setProductGroupsByName("Male");
         addProductPage.setProductQuantity("100");
-        //addProductPage.setProductPicture("D:\\Tools\\test1.png");
+        addProductPage.setProductPicture("D:\\Tools\\test1.png");
         addProductPage.setProductDateValidFrom("01.01.2016");
         addProductPage.setProductDateValidTo("01.01.2020");
 
@@ -48,11 +53,12 @@ public class AddProductTest extends BaseTest {
         addProductPage.setProductPurchasePrice("40.5");
         addProductPage.selectProductPurchasePriceCurrencyByCode("USD");
         addProductPage.setProductPriceUSD("35.5");
-        /*addProductPage.setProductPriceEUR("27.5");
-        addProductPage.setProductGrossPriceUSD("39.5");
-        addProductPage.setProductGrossPriceEUR("32.5");*/
 
         addProductPage.clickOnSaveButton();
+
+        Assert.assertTrue("Test product is not found", catalogPage.isProductNamePresentInProductCatalog(productname));
+
+
 
     }
 }

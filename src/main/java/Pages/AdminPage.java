@@ -18,6 +18,9 @@ public class AdminPage {
     @FindBy(xpath ="//*[@id='app-']")
     private List<WebElement> menuItemsListLocator;
 
+    @FindBy(xpath ="//*[@id='app-']//a")
+    private List<WebElement> menuItemNamesListLocator;
+
     @FindBy(xpath = "//a[@class = 'button'][text() = ' Add New Product']")
     private WebElement AddNewProductButton;
 
@@ -42,19 +45,18 @@ public class AdminPage {
          menuItemsListLocator.get(i).click();
     }
 
-/*
     public void clickSpecificMenuItemFromLeftSidebarByName(String name){
-        driver.findElement(By.xpath("/*/
-/*[@id='app-']//span[@class='name'][text()='"+name+"']")).click();
-        for(WebElement el : menuItemsListLocator){
-            System.out.println(el.findElement(By.xpath("//span[@class='name'][text()='"+name+"']")).getText());
-            if (el.findElement(By.xpath(".//span[@class='name'][text()='"+name+"']")).getText() == name){
-                System.out.println(el.findElement(By.xpath(".//span[@class='name'][text()='"+name+"']")).getText() + " clicked");
+        String temp = "";
+        for(WebElement el : menuItemNamesListLocator){
+            temp = el.getText();
+            if (name.equals(temp)){
                 el.click();
+                //System.out.println(el.getText() + " clicked");
+                return;
             }
+
         }
     }
-*/
 
     public List<WebElement> getAllSubMenuItemsFromLeftSidebarMenuItemByParentPositionNumber(int i){
         return menuItemsListLocator.get(i).findElements(By.xpath("//li"));

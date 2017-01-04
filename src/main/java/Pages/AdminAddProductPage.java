@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by Gleb on 03.01.2017.
  */
-public class AdminAddProductPage extends AdminPage {
+public class AdminAddProductPage {
 
     private WebDriver driver;
 
@@ -80,10 +80,8 @@ public class AdminAddProductPage extends AdminPage {
     public void setProductCategoryByName(String name){
 
         for (WebElement category : Categories){
-            System.out.println(category.getAttribute("data-name"));
-            if ((category.getAttribute("data-name")) == name){
+            if (name.equals(category.getAttribute("data-name"))){
                 category.click();
-                System.out.println(category.getAttribute("data-name") + " clicked");
             }
         }
     }
@@ -91,16 +89,16 @@ public class AdminAddProductPage extends AdminPage {
     public void setProductGroupsByName(String name){
         switch (name){
             case "Male":
-                Categories.get(0).click();
+                ProductGroups.get(0).click();
                 break;
             case "Female":
-                Categories.get(1).click();
+                ProductGroups.get(1).click();
                 break;
             case "Unisex":
-                Categories.get(2).click();
+                ProductGroups.get(2).click();
                 break;
             default:
-                Categories.get(2).click();
+                ProductGroups.get(2).click();
         }
 
     }
@@ -112,18 +110,14 @@ public class AdminAddProductPage extends AdminPage {
 
     public void setProductPicture(String path){
         WebElement lastUploadControl = UploadImage.get(UploadImage.size()-1);
-        unhide(driver, lastUploadControl);
-        attachFile(driver, lastUploadControl,path);
-
+        lastUploadControl.sendKeys(path);
     }
 
     public void setProductDateValidFrom(String text){
-        //DateValidFrom.clear();
         DateValidFrom.sendKeys(text);
     }
 
     public void setProductDateValidTo(String text){
-        //DateValidTo.clear();
         DateValidTo.sendKeys(text);
     }
 

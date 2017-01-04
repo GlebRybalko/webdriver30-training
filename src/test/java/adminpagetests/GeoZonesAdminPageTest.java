@@ -25,7 +25,7 @@ public class GeoZonesAdminPageTest extends BaseTest {
 
         List<WebElement> geoZonesList = new ArrayList<>();
 
-        adminpage.clickSpecificMenuItemFromLeftSidebarByPositionNumber(5); //id 5 =>"Geo Zones"
+        adminpage.clickSpecificMenuItemFromLeftSidebarByName("Geo Zones");
 
         geoZonesList = driver.findElements(By.cssSelector("form[name = 'geo_zones_form'] td:nth-child(3) > a"));
 
