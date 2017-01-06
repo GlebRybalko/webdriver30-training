@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * Created by Gleb on 31.12.2016.
  */
-public class AddProductTest extends BaseTest {
+public class CreateNewProductInAdminPageTest extends BaseTest {
 
     @Test
     public void addNewProductTest(){

@@ -16,6 +16,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -27,6 +28,12 @@ public class BaseTest {
 
         public boolean areElementsPresent(WebDriver driver, By locator) {
             return driver.findElements(locator).size() > 0;
+        }
+
+        public int randomInteger(int min, int max) {
+            Random rand = new Random();
+            int randomNum = min + (int)(Math.random() * ((max - min) + 1));
+            return randomNum;
         }
 
         @Before
