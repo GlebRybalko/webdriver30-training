@@ -26,6 +26,9 @@ public class CheckoutPage {
     @FindBy(css = "div#box-checkout-summary table.dataTable")
     private WebElement OrderSummary;
 
+    @FindBy(css = "div#box-checkout-summary table.dataTable td.item")
+    private List<WebElement> ProductsInOrderSummary;
+
     @FindBy(xpath = "//li[@class = 'item']")
     private List<WebElement> ProductsInBasket;
 
@@ -42,6 +45,10 @@ public class CheckoutPage {
 
     public WebElement getProductInBasketByPosition(Integer position){
         return ProductsInBasket.get(position);
+    }
+
+    public WebElement getProductInOrderSummaryByPosition(Integer position){
+        return ProductsInOrderSummary.get(position);
     }
 
     public List<WebElement> getProductsInBasket(){

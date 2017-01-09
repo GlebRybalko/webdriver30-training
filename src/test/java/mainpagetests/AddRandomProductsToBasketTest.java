@@ -38,18 +38,16 @@ public class AddRandomProductsToBasketTest extends BaseTest{
         }
 
         mainPage.CheckoutClick();
-        Integer i = checkoutPage.getProductsInBasket().size() - 1;
+        Integer productsCounter = checkoutPage.getProductsInBasket().size() - 1;
         while(checkoutPage.getProductsInBasket().size() > 0){
 
             checkoutPage.RemoveButtonClick();
-            //wait.until(stalenessOf(checkoutPage.getOrderSummaryTable()));
-            wait.until(stalenessOf(checkoutPage.getProductInBasketByPosition(i)));
-            i--;
+            //wait until product to be removed in Order Summary section
+            wait.until(stalenessOf(checkoutPage.getProductInOrderSummaryByPosition(productsCounter)));
+            productsCounter--;
             System.out.println("Element clicked");
 
         }
-
-        //assertTrue("Element present, but shouldn't",wait.until(stalenessOf(checkoutPage.getOrderSummaryTable())));
     }
 
 }
