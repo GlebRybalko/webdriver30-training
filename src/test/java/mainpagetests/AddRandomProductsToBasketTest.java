@@ -23,7 +23,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
 public class AddRandomProductsToBasketTest extends BaseTest{
 
     @Test
-    public void AddRandomProductsToBasketAndDeleteThemTest() throws InterruptedException {
+    public void AddRandomProductsToBasketAndDeleteThemTest() {
 
         driver.get("http://localhost/litecart/");
         MainPage mainPage = PageFactory.initElements(driver,MainPage.class);

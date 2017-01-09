@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a517168-c75b-4ef9-93e4-8a2814e130a4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Pages/CheckoutPage.java" afterPath="$PROJECT_DIR$/src/main/java/Pages/CheckoutPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mainpagetests/AddRandomProductsToBasketTest.java" afterPath="$PROJECT_DIR$/src/test/java/mainpagetests/AddRandomProductsToBasketTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,8 +23,8 @@
       <file leaf-file-name="AddRandomProductsToBasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mainpagetests/AddRandomProductsToBasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            <state relative-caret-position="-231">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -871,13 +870,17 @@
       <option name="project" value="LOCAL" />
       <updated>1483689625510</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Assignment #13 completed">
+      <created>1483953046326</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1483953046326</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddRandomProductsToBasketTest_AddRandomProductsToBasketAndDeleteThemTest - 2017.01.06 at 09h 34m 53s.xml">
-      <configuration name="AddRandomProductsToBasketTest.AddRandomProductsToBasketAndDeleteThemTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AddRandomProductsToBasketTest_AddRandomProductsToBasketAndDeleteThemTest - 2017.01.06 at 09h 35m 27s.xml">
       <configuration name="AddRandomProductsToBasketTest.AddRandomProductsToBasketAndDeleteThemTest" configurationId="JUnit" />
     </history-entry>
@@ -903,6 +906,9 @@
       <configuration name="AddRandomProductsToBasketTest.AddRandomProductsToBasketAndDeleteThemTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AddRandomProductsToBasketTest_AddRandomProductsToBasketAndDeleteThemTest - 2017.01.09 at 11h 10m 11s.xml">
+      <configuration name="AddRandomProductsToBasketTest.AddRandomProductsToBasketAndDeleteThemTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddRandomProductsToBasketTest_AddRandomProductsToBasketAndDeleteThemTest - 2017.01.09 at 11h 31m 04s.xml">
       <configuration name="AddRandomProductsToBasketTest.AddRandomProductsToBasketAndDeleteThemTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -963,7 +969,8 @@
     <MESSAGE value="Interim results of assignment #12" />
     <MESSAGE value="Completed assignment #12" />
     <MESSAGE value="Interim results of assignment #13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interim results of assignment #13" />
+    <MESSAGE value="Assignment #13 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment #13 completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1392,8 +1399,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mainpagetests/AddRandomProductsToBasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        <state relative-caret-position="-231">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
