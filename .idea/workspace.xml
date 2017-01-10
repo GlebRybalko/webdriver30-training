@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a517168-c75b-4ef9-93e4-8a2814e130a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Pages/AddNewCountryAdminCountriesPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Pages/AdminCountriesPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/adminpagetests/AddCountriesInAdminPageTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" />
     </list>
@@ -33,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddCountriesInAdminPageTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddCountriesInAdminPageTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/AddCountriesInAdminPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
@@ -45,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="47" column="6" lean-forward="true" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+            <state relative-caret-position="84">
+              <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -174,8 +171,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Pages/AddNewCountryAdminCountriesPge.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/AdminCountriesPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/AddNewCountryAdminCountriesPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/base/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/adminpagetests/AddCountriesInAdminPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/base/BaseTest.java" />
       </list>
     </option>
   </component>
@@ -925,7 +922,14 @@
       <option name="project" value="LOCAL" />
       <updated>1483954288258</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Assignment #14 completed">
+      <created>1484081250166</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1484081250166</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1018,7 +1022,8 @@
     <MESSAGE value="Completed assignment #12" />
     <MESSAGE value="Interim results of assignment #13" />
     <MESSAGE value="Assignment #13 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment #13 completed" />
+    <MESSAGE value="Assignment #14 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment #14 completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1418,14 +1423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="47" column="6" lean-forward="true" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/AddCountriesInAdminPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1433,6 +1430,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -39,15 +39,9 @@ public class BaseTest {
         public void switchToNewWindowByClickOnWebelement(WebElement elem){
             mainWindow = driver.getWindowHandle();
             oldWindows = driver.getWindowHandles();
-            elem.click(); // открывает новое окно
-// ожидание появления нового окна,
-// идентификатор которого отсутствует в списке oldWindows,
-// остаётся в качестве самостоятельного упражнения
+            elem.click();
             String newWindow = wait.until(thereIsWindowOtherThan(oldWindows));
             driver.switchTo().window(newWindow);
-// ...
-/*            driver.close();
-            driver.switchTo().window(mainWindow);*/
         }
 
         public void switchToMainWindowAndCloseCurrentWindow(){
