@@ -10,13 +10,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -25,6 +23,8 @@ public class BaseTest {
         public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
         public WebDriver driver;
         public WebDriverWait wait;
+        String mainWindow;
+        Set<String> oldWindows;
 
         public boolean areElementsPresent(WebDriver driver, By locator) {
             return driver.findElements(locator).size() > 0;
@@ -34,6 +34,36 @@ public class BaseTest {
             Random rand = new Random();
             int randomNum = min + (int)(Math.random() * ((max - min) + 1));
             return randomNum;
+        }
+
+        public void switchToNewWindowByClickOnWebelement(WebElement elem){
+            mainWindow = driver.getWindowHandle();
+            oldWindows = driver.getWindowHandles();
+            elem.click(); // открывает новое окно
+// ожидание появления нового окна,
+// идентификатор которого отсутствует в списке oldWindows,
+// остаётся в качестве самостоятельного упражнения
+            String newWindow = wait.until(thereIsWindowOtherThan(oldWindows));
+            driver.switchTo().window(newWindow);
+// ...
+/*            driver.close();
+            driver.switchTo().window(mainWindow);*/
+        }
+
+        public void switchToMainWindowAndCloseCurrentWindow(){
+            driver.close();
+            driver.switchTo().window(mainWindow);
+        }
+
+        public ExpectedCondition<String> thereIsWindowOtherThan(Set<String> oldWindows){
+            return new ExpectedCondition<String>() {
+                @Override
+                public String apply(WebDriver webDriver) {
+                    Set<String> handles = driver.getWindowHandles();
+                    handles.removeAll(oldWindows);
+                    return handles.size() > 0 ? handles.iterator().next() : null;
+                }
+            };
         }
 
         @Before
