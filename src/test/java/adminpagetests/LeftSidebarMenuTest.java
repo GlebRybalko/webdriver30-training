@@ -1,5 +1,6 @@
 package adminpagetests;
 
+import Pages.AdminAddProductPage;
 import Pages.AdminPage;
 import Pages.AdminLoginPage;
 import base.BaseTest;
@@ -25,6 +26,7 @@ public class LeftSidebarMenuTest extends BaseTest {
 
         AdminLoginPage loginpage = PageFactory.initElements(driver, AdminLoginPage.class);
         AdminPage adminpage = PageFactory.initElements(driver, AdminPage.class);
+
         loginpage.loginAs("admin","admin");
 
         List<WebElement> subMenuItemsList = new ArrayList<WebElement>();
