@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,6 +35,14 @@ public class BaseTest {
             Random rand = new Random();
             int randomNum = min + (int)(Math.random() * ((max - min) + 1));
             return randomNum;
+        }
+
+        public List<LogEntry> getBrowserLogs(){
+            for (LogEntry l : driver.manage().logs().get("browser").getAll()) {
+                System.out.println(l);
+
+            }
+            return driver.manage().logs().get("browser").getAll();
         }
 
         public void switchToNewWindowByClickOnWebelement(WebElement elem){

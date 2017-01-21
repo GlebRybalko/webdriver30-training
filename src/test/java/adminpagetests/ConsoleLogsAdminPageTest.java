@@ -5,8 +5,10 @@ import Pages.AdminCatalogPage;
 import Pages.AdminLoginPage;
 import Pages.AdminPage;
 import base.BaseTest;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.support.PageFactory;
 
 /**
@@ -31,14 +33,15 @@ public class ConsoleLogsAdminPageTest extends BaseTest {
         int countOfOpenedFolders = 0;
         while(catalogPage.getExistingProductsFoldersSize() > 0){
             catalogPage.getExistingProductsList().get(countOfOpenedFolders).click();
-            countOfOpenedFolders++;
         }
+
 
         //iterating over all products and checking browser logs
         int countOfProducts = catalogPage.getExistingProductsList().size();
-        for (int i =1; i<=countOfProducts; i++){
-
+        for (int i = 0; i < countOfProducts; i++){
             catalogPage.clickProductExistingByPosition(i);
+            getBrowserLogs().size();
+            Assert.assertEquals("Browser logs contain JS logs entries",0,getBrowserLogs().size());
             editExistingProductPage.clickOnCancelButton();
 
         }
