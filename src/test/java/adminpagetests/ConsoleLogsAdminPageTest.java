@@ -7,8 +7,6 @@ import Pages.AdminPage;
 import base.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.support.PageFactory;
 
 /**

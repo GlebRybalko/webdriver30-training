@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a517168-c75b-4ef9-93e4-8a2814e130a4" name="Default" comment="">
+    <list default="true" id="9a517168-c75b-4ef9-93e4-8a2814e130a4" name="Default" comment="Assignment #17 completed">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/adminpagetests/ConsoleLogsAdminPageTest.java" afterPath="$PROJECT_DIR$/src/test/java/adminpagetests/ConsoleLogsAdminPageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +23,8 @@
       <file leaf-file-name="ConsoleLogsAdminPageTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/ConsoleLogsAdminPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="43" column="69" lean-forward="false" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+            <state relative-caret-position="220">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -935,13 +934,17 @@
       <option name="project" value="LOCAL" />
       <updated>1484692617999</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Assignment #17 completed">
+      <created>1485031785222</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1485031785222</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConsoleLogsAdminPageTest_checkConsoleLogsWhileSwitchingProductsInCatalog - 2017.01.21 at 22h 27m 17s.xml">
-      <configuration name="ConsoleLogsAdminPageTest.checkConsoleLogsWhileSwitchingProductsInCatalog" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConsoleLogsAdminPageTest_checkConsoleLogsWhileSwitchingProductsInCatalog - 2017.01.21 at 22h 29m 21s.xml">
       <configuration name="ConsoleLogsAdminPageTest.checkConsoleLogsWhileSwitchingProductsInCatalog" configurationId="JUnit" />
     </history-entry>
@@ -967,6 +970,9 @@
       <configuration name="ConsoleLogsAdminPageTest.checkConsoleLogsWhileSwitchingProductsInCatalog" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ConsoleLogsAdminPageTest_checkConsoleLogsWhileSwitchingProductsInCatalog - 2017.01.21 at 22h 48m 44s.xml">
+      <configuration name="ConsoleLogsAdminPageTest.checkConsoleLogsWhileSwitchingProductsInCatalog" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsoleLogsAdminPageTest_checkConsoleLogsWhileSwitchingProductsInCatalog - 2017.01.21 at 22h 51m 38s.xml">
       <configuration name="ConsoleLogsAdminPageTest.checkConsoleLogsWhileSwitchingProductsInCatalog" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1060,7 +1066,8 @@
     <MESSAGE value="Assignment #13 completed" />
     <MESSAGE value="Assignment #14 completed" />
     <MESSAGE value="Assignment #17 interim results" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment #17 interim results" />
+    <MESSAGE value="Assignment #17 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment #17 completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1419,8 +1426,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/adminpagetests/ConsoleLogsAdminPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="43" column="69" lean-forward="false" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+        <state relative-caret-position="220">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
